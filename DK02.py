@@ -208,8 +208,8 @@ wait = {
     "Respontag":"🕵 SELFBOT-BY:MAX 🕵",
     "welcome":"🕵 SELFBOT-BY:MAX 🕵",
     "leave":"Slamat tinggal sobat\nsmoga ktmu di lain hari nanti",
-    "comment":"🕵 SELFBOT-BY:MAX 🕵
-    "message":"🕵 SELFBOT-BY:MAX 🕵
+    "comment":"🕵 SELFBOT-BY:MAX 🕵",
+    "message":"🕵 SELFBOT-BY:MAX 🕵"
 }
 read = {
     "readPoint":{},
@@ -458,55 +458,51 @@ def atend():
 def help():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage = "🔑❂͜͡➣ " + key + " [🔰Ⓓⓚ~ⒷⓄⓣ☯t]\n" + \
-                  "🔑❂͜͡➣ " + key + "✰DRAGON KILLER✰\n" + \
-                  "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ\n" + \
-                  "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ1\n" + \
-                  "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ2\n" + \
-                  "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ3\n" + \
-                  "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ4\n" + \
-                  "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ5\n" + \
-                  "🔑❂͜͡➣ " + key + "ᴍᴇ\n" + \
-                  "🔑❂͜͡➣ " + key + "sᴛᴀᴛᴜs\n" + \
-                  "🔑❂͜͡➣ " + key + "ᴀʙᴏᴜᴛ\n" + \
-                  "🔑❂͜͡➣ " + key + "Cek kesehatan\n" + \
-                  "🔑❂͜͡➣ " + key + "ʀᴇsᴛᴀʀᴛ\n" + \
-                  "🔑❂͜͡➣ " + key + "ʀᴜɴᴛɪᴍᴇ\n" + \
-                  "🔑❂͜͡➣ " + key + "ᴄʀᴇᴀᴛᴏʀ\n" + \
-                  "🔑❂͜͡➣ " + key + "sᴘᴇᴇᴅ/sᴘ\n" + \
-                  "🔑❂͜͡➣ " + key + "Bot:on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "Staff:on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "Admin on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "Refresh\n" + \
-                  "🔑❂͜͡➣ " + key + "Kibar\n" + \
-                  "🔑❂͜͡➣ " + key + "klinik\n" + \
-                  "🔑❂͜͡➣ " + key + "Masuk\n" + \
-                  "🔑❂͜͡➣ " + key + "Pulang/sᴘ\n" + \
-                  "🔑「✭Kunci Protect✭」\n" + \
-                  "🔑❂͜͡➣ " + key + "Antijs stay\n" + \
-                  "🔑❂͜͡➣ " + key + "Ghost in\n" + \
-                  "🔑❂͜͡➣ " + key + "Dkbot\n" + \
-                  "🔑❂͜͡➣ " + key + "Reinvite\n" + \
-                  "🔑❂͜͡➣ " + key + "Blc\n" + \
-                  "🔑❂͜͡➣ " + key + "Clearban\n" + \
-                  "🔑❂͜͡➣ " + key + "Adminadd @\n" + \
-                  "🔑❂͜͡➣ " + key + "Admindell @\n" + \
-                  "🔑❂͜͡➣ " + key + "protectkick on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "protectjoin on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "protectinvite on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "protecturl on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "Ghost on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "Bot1,2,3,4up\n" + \
-                  "🔑❂͜͡➣ " + key + "Semua pro on\off\n" + \
-                  "🔑❂͜͡➣ " + key + "Antijs on\n" + \
-                  "🔑❂͜͡➣ " + key + "ᴋɪᴄᴋᴀʟʟᴍᴇᴍʙᴇʀ)\n" + \
-                  "🔑❂͜͡➣ " + key + "ʙʀᴏᴀᴅᴄᴀsᴛ:「ᴛᴇxᴛ」\n" + \
-                  "🔑❂͜͡➣ " + key + "sᴇᴛᴋᴇʏ「ɴᴇᴡ ᴋᴇʏ」 \n" + \
-                  "🔑❂͜͡➣ " + key + "ᴍʏᴋᴇʏ\n" + \
-                  "🔑❂͜͡➣ " + key + "ʀᴇsᴇᴛᴋᴇʏ\n" + \
-                  "🔑❂͜͡➣ " + key + "ʀᴇғʀᴇsʜ\n" + \
-                  "👮❂͜͡➣ " + key + "Restart\n"+ \
-                  "🔑❂͜͡➣ [[DKBOT-LINE]]"
+    helpMessage = "🇹🇭❂͜͡➣ " + key + "🤖 คำสั่ง 🤖\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/คำสั่ง\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/คำสั่ง1\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/คำสั่ง2\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/คำสั่ง3\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/คท\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/เช็ค\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ข้อมูล\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/รีบอท\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ออน\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ผส\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "sᴘ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Cek kesehatan\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Bot:on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Staff:on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Admin on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Refresh\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Kibar\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "klinik\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Masuk\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Pulang/sᴘ\n" + \
+                  "🇹🇭 🤖 คำสั่งบอท 🤖\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Antijs stay\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Ghost in\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Dkbot\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Reinvite\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Blc\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Clearban\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Adminadd @\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Admindell @\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "protectkick on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "protectjoin on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "protectinvite on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "protecturl on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Ghost on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Bot1,2,3,4up\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Semua pro on\off\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Antijs on\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ᴋɪᴄᴋᴀʟʟᴍᴇᴍʙᴇʀ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ʙʀᴏᴀᴅᴄᴀsᴛ:「ᴛᴇxᴛ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "sᴇᴛᴋᴇʏ「ɴᴇᴡ ᴋᴇʏ」 \n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ᴍʏᴋᴇʏ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ʀᴇsᴇᴛᴋᴇʏ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ʀᴇғʀᴇsʜ\n" + \
+                  "🇹🇭❂͜͡➣ 🕵 SELFBOT-BY:MAX 🕵"
 
     return helpMessage
 
@@ -3428,7 +3424,7 @@ def bot(op):
                                 wait["selfbot"] = False
                                 cl.sendText(msg.to, "Selfbot dinonaktifkan")
                                             
-                        elif cmd == "help":
+                        elif cmd == "/คำสั่ง":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 helpMessage = help()
@@ -3449,7 +3445,7 @@ def bot(op):
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
 
-                        elif cmd == "help1":
+                        elif cmd == "/คำสั่ง1":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 helpMessage1 = help1()
@@ -3470,7 +3466,7 @@ def bot(op):
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
 
-                        elif cmd == "help2":
+                        elif cmd == "/คำสั่ง2":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 helpMessage2 = help2()
@@ -3491,7 +3487,7 @@ def bot(op):
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
 
-                        elif cmd == "help3":
+                        elif cmd == "/คำสั่ง3":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 helpMessage3 = help3()
@@ -3512,7 +3508,7 @@ def bot(op):
                                 text = xpesan + zxc + ret_ + ""
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
 
-                        elif cmd == "status":
+                        elif cmd == "/เช็ค":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 tz = pytz.timezone("Asia/Jakarta")
@@ -3575,7 +3571,7 @@ def bot(op):
                                 text = xpesan + zxc + ret_ + "\n• Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n• Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d')
                                 cl.sendMessage(to, text, contentMetadata={'MENTION':str('{"MENTIONEES":'+json.dumps(zx2).replace(' ','')+'}')}, contentType=0)
                                 
-                        elif cmd == "creator" or text.lower() == 'creator':
+                        elif cmd == "/ผส" or text.lower() == 'creator':
                             if msg._from in admin:
                                 cl.sendText(msg.to,"「CREATOR BOT\nPelindung Room Kita」") 
                                 ma = ""
@@ -3583,7 +3579,7 @@ def bot(op):
                                     ma = cl.getContact(i)
                                     cl.sendMessage(msg.to, None, contentMetadata={'mid': i}, contentType=13)
 
-                        elif cmd.startswith('about'):
+                        elif cmd.startswith('/ข้อมูล'):
                           if wait["selfbot"] == True:
                            if msg._from in admin:
                             try:
@@ -3635,7 +3631,7 @@ def bot(op):
                             except Exception as e:
                                 cl.sendMessage(msg.to, str(e))
 
-                        elif cmd == "me" or text.lower() == 'aim':
+                        elif cmd == "/คท" or text.lower() == 'aim':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                sendMention(msg.to, sender, "「 User Selfbot 」\n", "")
@@ -3655,7 +3651,7 @@ def bot(op):
                                cl.sendMessage(msg.to, "Nama : "+str(mi.displayName)+"\nMID : " +key1)
                                cl.sendMessage(msg.to, None, contentMetadata={'mid': key1}, contentType=13)
 
-                        elif ("Steal " in msg.text):
+                        elif ("/ขโมย " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -3779,7 +3775,7 @@ def bot(op):
                                except:
                                    pass
 
-                        elif text.lower() == "remove chat":
+                        elif text.lower() == "/ลบแชท":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                try:
