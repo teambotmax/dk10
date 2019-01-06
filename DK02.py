@@ -22,54 +22,54 @@ from googletrans import Translator
 import youtube_dl
 #import pyimgflip
 
-cl = LineClient(authToken="EAJ6au8oH7hKqexrXD8e.+r+jAIdxZWQoBO38ex8YVG.3JknVh70P6IXhj6PHqoR95FR6qvz/qCVVPk5Gs496t4=")
+cl = LineClient(authToken="")
 cl.log("Auth Token : " + str(cl.authToken))
 channel = LineChannel(cl)
 cl.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ki = LineClient(authToken="EAguf83MO8CsVeJTIqE7.6Sq876pwcqONhXi+E6YcnW.dsvwy/accVpUMLHIqZ+GIRf1B4FPPIE9aFSvK4VEi0Y=")
+ki = LineClient(authToken="")
 ki.log("Auth Token : " + str(ki.authToken))
 ki.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kk = LineClient(authToken="EAqK4BUaVuksZexq20s5.8OY1iJbE2cs3otqwBUM9rq.83TlKYF4RRqlp3aBSrjNrETFflWm6An3J2CNWJbgn8M=")
+kk = LineClient(authToken="")
 kk.log("Auth Token : " + str(kk.authToken))
 kk.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kc = LineClient(authToken="EAPQMbBwfNNIN799FGKb.x6JXUNwTo2ABeWsGFXEkYW.W7rWxWKm/oJsiJfGjoJnw3WCus33q4FohdFwGjNJ4QM=")
+kc = LineClient(authToken="")
 kc.log("Auth Token : " + str(kc.authToken))
 kc.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kb = LineClient(authToken="EAPQMbBwfNNIN799FGKb.x6JXUNwTo2ABeWsGFXEkYW.W7rWxWKm/oJsiJfGjoJnw3WCus33q4FohdFwGjNJ4QM=")
+kb = LineClient(authToken="")
 kb.log("Auth Token : " + str(kb.authToken))
 kb.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kd = LineClient(authToken="EAZZOe7HmuNA6qgbYm4f.iXDW3NqeZe2QwsaB0p/2tW.tRzxpuZLKrSfpqf02qvlDmofsOuNc5/7mhHnIj6e3a8=")
+kd = LineClient(authToken="")
 kd.log("Auth Token : " + str(kd.authToken))
 kd.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-ke = LineClient(authToken="EAiQDK8ntiQRrTspS6t7.ysELs5+0aaJPhSRVRuIgzW.Yl4G2Z9eA+5j92eaNLp6YL6mGoSQWyGZ3nzEC8Jy3LI=")
+ke = LineClient(authToken="")
 ke.log("Auth Token : " + str(ke.authToken))
 ke.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kf = LineClient(authToken="EAiQDK8ntiQRrTspS6t7.ysELs5+0aaJPhSRVRuIgzW.Yl4G2Z9eA+5j92eaNLp6YL6mGoSQWyGZ3nzEC8Jy3LI=")
+kf = LineClient(authToken="")
 kf.log("Auth Token : " + str(kf.authToken))
 kf.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-kj = LineClient(authToken="EAlXBSPeJxrZdU4r1S01.oFAdwbsxdvvicAIEyG/cGq.LrCl7aG0MK/7HKh8M9rJSJMoTdB5UHRkKJdzpKSgDcQ=")
+kj = LineClient(authToken="")
 kj.log("Auth Token : " + str(kj.authToken))
 kj.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-sw = LineClient(authToken="EAlXBSPeJxrZdU4r1S01.oFAdwbsxdvvicAIEyG/cGq.LrCl7aG0MK/7HKh8M9rJSJMoTdB5UHRkKJdzpKSgDcQ=")
+sw = LineClient(authToken="")
 sw.log("Auth Token : " + str(sw.authToken))
 sw.log("Channel Access Token : " + str(channel.channelAccessToken))
-print("\nBOT MULAI BERJALAN.......\n")
+print("\nBY: SELFBOT-BY:MAX\n")
 
 poll = LinePoll(cl)
 call = cl
-creator = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be"]
-owner = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be"]
-admin = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be"]
-staff = ["ufd1fc96a20d7cf0a8e6e8dfc117f32be"]
+creator = ["u954d9f74bc255dad64dc89bf1601469c"]
+owner = ["u954d9f74bc255dad64dc89bf1601469c"]
+admin = ["u954d9f74bc255dad64dc89bf1601469c"]
+staff = ["u954d9f74bc255dad64dc89bf1601469c"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
 Bmid = kk.getProfile().mid
@@ -116,7 +116,6 @@ settings = {
     "groupPicture":False,
     "changePicture":False,
     "autoJoinTicket":False,
- #   "restartPoint": null,
     "userMention":{},
     "timeRestart": {},
     "server": {},
@@ -166,15 +165,15 @@ wait = {
     "talkban":False,
     "contact":False,
     "invite":False,
-    'autoJoin':True,
+    'autoJoin':False,
     'autoAdd':False,
     'autoBlock':False,
-    'Timeline':True,
+    'Timeline':False,
     'autoLeave':False,
     'autoLeave1':False,
     "detectMention":False,
     "mentionKick":False,
-    "welcomeOn":True,
+    "welcomeOn":False,
     "likeOn":True,
     "stickerOn":False,
     "Addsticker":{
@@ -205,12 +204,12 @@ wait = {
             "statusMessage": ""
             },
     "unsend":True,
-    "mention":"Cie.......ɴɢɪɴᴛɪᴘ ʏᴀ\nawas mata nya kelilipan?",
-    "Respontag":"Ngetag lagi kangen ya",
-    "welcome":"รεℓαɱαт ∂αтαɳɠ \nɓµ∂αყαҡαɳ ૮εҡ ɳσтε.\nรεɱoga jadi kawan baik\namin",
+    "mention":"🕵 SELFBOT-BY:MAX 🕵",
+    "Respontag":"🕵 SELFBOT-BY:MAX 🕵",
+    "welcome":"🕵 SELFBOT-BY:MAX 🕵",
     "leave":"Slamat tinggal sobat\nsmoga ktmu di lain hari nanti",
-    "comment":" ──────┅❇͜͡❇͜͡☆͜͡❇͜͡❇┅──────\nᴼᴾᴱᴺ ᴼᴿᴰᴱᴿ\n────────┅┅───────\n➣ꜱᴇʟꜰʙᴏᴛ ᴏɴʟʏ\n➣ꜱᴇʟꜰʙᴏᴛ + ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 2 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 3 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 4 ᴀꜱɪꜱᴛ\n➣1 ᴀᴋᴜɴ ᴜᴛᴀᴍᴀ + 5 ᴀꜱɪꜱᴛ\n➣ʙᴏᴛᴘʀᴏᴛᴇᴄᴛ 3-11 ʙᴏᴛ ᴀꜱɪꜱᴛ\n➣ɴᴇᴡ ꜱᴄʀɪᴘᴛ\n➣ʜʀɢᴀ ʙɪꜱᴀ ɴᴇɢᴏ\n─────────┅┅─────────\n  ✯❇͜͡❇͜͡C͜͡r͜͡e͜͡a͜͡t͜͡o͜͡r✯͜͡$͜͡ë͜͡I͜͡F͜͡-͜͡฿͜͜͡͡o͜͡t͜͡ ͜͡❇͜͡❇✯\nline.me/ti/p/~reza.p.i.p\nline.me/ti/p/~reza.p.i.p\n➣ѕєʟғвот κɪcκєʀ_+_ᴘʀᴏᴛᴇᴄᴛ\n────────┅❇͜͡❇͜͡☆͜͡❇͜͡❇┅────────",
-    "message":"Terimɑ Kɑsih yɑ....\nUdɑh Menɑmbɑhkɑn Sɑyɑ Sebɑgɑi Temɑn ɑndɑ.\nSemogɑ Kitɑ Bisɑ Jɑlin Silɑturɑhmi Dengɑn Bɑik.\n\nвστ вy:dzulkifli",
+    "comment":"🕵 SELFBOT-BY:MAX 🕵
+    "message":"🕵 SELFBOT-BY:MAX 🕵
 }
 read = {
     "readPoint":{},
@@ -460,16 +459,16 @@ def help():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage = "🔑❂͜͡➣ " + key + " [🔰Ⓓⓚ~ⒷⓄⓣ☯t]\n" + \
-                   "🔑❂͜͡➣" + key + "✰DRAGON KILLER✰\n" + \
+                  "🔑❂͜͡➣ " + key + "✰DRAGON KILLER✰\n" + \
                   "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ\n" + \
                   "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ1\n" + \
                   "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ2\n" + \
-                   "🔑❂͜͡➣" + key + "ʜᴇʟᴘ3\n" + \
+                  "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ3\n" + \
                   "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ4\n" + \
                   "🔑❂͜͡➣ " + key + "ʜᴇʟᴘ5\n" + \
                   "🔑❂͜͡➣ " + key + "ᴍᴇ\n" + \
-                   "🔑❂͜͡➣" + key + "sᴛᴀᴛᴜs\n" + \
-                   "🔑❂͜͡➣" + key + "ᴀʙᴏᴜᴛ\n" + \
+                  "🔑❂͜͡➣ " + key + "sᴛᴀᴛᴜs\n" + \
+                  "🔑❂͜͡➣ " + key + "ᴀʙᴏᴜᴛ\n" + \
                   "🔑❂͜͡➣ " + key + "Cek kesehatan\n" + \
                   "🔑❂͜͡➣ " + key + "ʀᴇsᴛᴀʀᴛ\n" + \
                   "🔑❂͜͡➣ " + key + "ʀᴜɴᴛɪᴍᴇ\n" + \
@@ -477,8 +476,8 @@ def help():
                   "🔑❂͜͡➣ " + key + "sᴘᴇᴇᴅ/sᴘ\n" + \
                   "🔑❂͜͡➣ " + key + "Bot:on\off\n" + \
                   "🔑❂͜͡➣ " + key + "Staff:on\off\n" + \
-                   "🔑❂͜͡➣" + key + "Admin on\off\n" + \
-                   "🔑❂͜͡➣" + key + "Refresh\n" + \
+                  "🔑❂͜͡➣ " + key + "Admin on\off\n" + \
+                  "🔑❂͜͡➣ " + key + "Refresh\n" + \
                   "🔑❂͜͡➣ " + key + "Kibar\n" + \
                   "🔑❂͜͡➣ " + key + "klinik\n" + \
                   "🔑❂͜͡➣ " + key + "Masuk\n" + \
@@ -486,16 +485,16 @@ def help():
                   "🔑「✭Kunci Protect✭」\n" + \
                   "🔑❂͜͡➣ " + key + "Antijs stay\n" + \
                   "🔑❂͜͡➣ " + key + "Ghost in\n" + \
-                   "🔑❂͜͡➣" + key + "Dkbot\n" + \
-                   "🔑❂͜͡➣" + key + "Reinvite\n" + \
+                  "🔑❂͜͡➣ " + key + "Dkbot\n" + \
+                  "🔑❂͜͡➣ " + key + "Reinvite\n" + \
                   "🔑❂͜͡➣ " + key + "Blc\n" + \
                   "🔑❂͜͡➣ " + key + "Clearban\n" + \
                   "🔑❂͜͡➣ " + key + "Adminadd @\n" + \
                   "🔑❂͜͡➣ " + key + "Admindell @\n" + \
                   "🔑❂͜͡➣ " + key + "protectkick on\off\n" + \
                   "🔑❂͜͡➣ " + key + "protectjoin on\off\n" + \
-                   "🔑❂͜͡➣" + key + "protectinvite on\off\n" + \
-                   "🔑❂͜͡➣" + key + "protecturl on\off\n" + \
+                  "🔑❂͜͡➣ " + key + "protectinvite on\off\n" + \
+                  "🔑❂͜͡➣ " + key + "protecturl on\off\n" + \
                   "🔑❂͜͡➣ " + key + "Ghost on\off\n" + \
                   "🔑❂͜͡➣ " + key + "Bot1,2,3,4up\n" + \
                   "🔑❂͜͡➣ " + key + "Semua pro on\off\n" + \
@@ -504,7 +503,7 @@ def help():
                   "🔑❂͜͡➣ " + key + "ʙʀᴏᴀᴅᴄᴀsᴛ:「ᴛᴇxᴛ」\n" + \
                   "🔑❂͜͡➣ " + key + "sᴇᴛᴋᴇʏ「ɴᴇᴡ ᴋᴇʏ」 \n" + \
                   "🔑❂͜͡➣ " + key + "ᴍʏᴋᴇʏ\n" + \
-                   "🔑❂͜͡➣" + key + "ʀᴇsᴇᴛᴋᴇʏ\n" + \
+                  "🔑❂͜͡➣ " + key + "ʀᴇsᴇᴛᴋᴇʏ\n" + \
                   "🔑❂͜͡➣ " + key + "ʀᴇғʀᴇsʜ\n" + \
                   "👮❂͜͡➣ " + key + "Restart\n"+ \
                   "🔑❂͜͡➣ [[DKBOT-LINE]]"
@@ -4574,63 +4573,7 @@ def bot(op):
                                cl.sendContact(to, Gmid)
                                cl.sendContact(to, Jmid)
                                cl.sendContact(to, Zmid)
-                               cl.sendMessage(msg.to, "█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n█░░║║║╠─║─║─║║║║║╠─░░█\n█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\n"
- "ASSALAMUALAIKUM\n"
-"  ╭━Ⓓ✒Ⓡ✒ⒼⓄ✒Ⓝ✒\n"
-"  ╰╮┏━┳┳┓┏┳┳┓┏┳┳┳┓\n"
-"  ┏┻╋━┻┻┫┣┻┻┫┣┻┻┻┫\n"
-"  ┃HLO▪┃KMI DTANG LGI┃\n"
-"  ┗ⓞⓞ┻┻ⓞ━━ⓞ┻┻ⓞ━╯\n"
-"UNTUK MENGGUSUR\nROOM KALIAN\n"
-"..  (҂`_´)\n"
-   " <,︻╦̵̵̿╤━ ҉     ~  •"
-"█۞███████]▄▄▄▄▄▄▃●●\n"
-"▂▄▅█████████▅▄▃▂…"
-"[██████████████████]\n"
-"◥⊙⊙▲⊙▲⊙▲⊙▲⊙▲⊙\n"
-"╭━╮╭━╮\n"
-"┃┃╰╯┃┃\n"
-"┃╭╮╭╮┣┳━╮╭━━┳━━┳┳━╮\n"
-"┃┃┃┃┃┣┫╭╮┫╭╮┃╭╮┣┫╭╯\n"
-"┃┃┃┃┃┃┃┃┃┃╰╯┃╰╯┃┃┃\n"
-"╰╯╰╯╰┻┻╯╰┻━╮┣━╮┣┻╯\n"
-"╱╱╱╱╱╱╱╱╱╭━╯┣━╯┃\n"
-"╱╱╱╱╱╱╱╱╱╰━━┻━━╯\n"
-"👿━━━━━━━━━━━━━👿"
-"Ⓣⓜⓟⓐ Ⓑⓐⓢⓐ_Ⓑⓐⓢⓘ\n"
-"Ⓡⓐⓣⓐ ⓖⓐ ⓡⓐⓣⓐ\n" 
-"Ⓨⓖ ⓟⓝⓣⓘⓝⓖ ⓚⓘⓑⓐⓡ\n"
-"Ⓣⓐⓝⓖⓚⓘⓢ Ⓖⓞⓑⓛⓞⓚ\n"
-"👿━━━━━━━━━━━━━👿\n"
-	"╔══╗╔═╗╔══╗╔═╦═╗\n"
-	"╚╗╔╝║╦╝║╔╗║║║║║║\n"
-	"━║║━║╩╗║╠╣║║║║║║\n"
-	"━╚╝━╚═╝╚╝╚╝╚╩═╩╝\n"
-"👿━━━━━━━━━━━━━👿\n"
-	"╔══╗         ╔╦╗\n"
-	"╚╗╗║         ║╔╝\n"
-	"╔╩╝║         ║╚╗\n"
-	"╚══╝         ╚╩╝\n"
-"👿━━━━━━━━━━━━━👿\n"        
-"Ⓓⓡⓐⓖⓞⓝ_Ⓚⓘⓛⓛⓔⓡ\n"
-"Ⓟⓤⓝⓨⓐ👿━━👿Ⓡⓐⓣⓐ Ⓝⓘ\n" 
-"Ⓜⓐⓗ━👿━\n"
-		"╔═╗╔══╗╔══╗╔══╗\n"
-		"║╬║║╔╗║╚╗╔╝║╔╗║\n"
-		"║╗╣║╠╣║━║║━║╠╣║\n"
-		"╚╩╝╚╝╚╝━╚╝━╚╝╚╝\n"
-		"━━━━━━━━━━━━━━━\n"
-		"╔═╗╔══╗╔══╗╔══╗\n"
-		"║╬║║╔╗║╚╗╔╝║╔╗║\n"
-		"║╗╣║╠╣║━║║━║╠╣║\n"
-		"╚╩╝╚╝╚╝━╚╝━╚╝╚╝\n"
-		"━━━━━━━━━━━━━━━\n"
-		"╔═╗╔══╗╔══╗╔══╗\n"
-		"║╬║║╔╗║╚╗╔╝║╔╗║\n"
-		"║╗╣║╠╣║━║║━║╠╣║\n"
-		"╚╩╝╚╝╚╝━╚╝━╚╝╚╝\n"
-		"━━━━━━━━━━━━━━━\n"
-">>>Ⓑⓨⓔ_Ⓑⓨⓔ ⒼⒸ Ⓛⓐⓚⓝⓐⓣ>><\nⒹⓝⓓⓐⓜ Ⓒⓐⓡⓘ Ⓚⓜⓘ\n<<<<<<<<<>>\nhttp://line.me/ti/p/~reza.p.i.p\nhttp://line.me/ti/p/ryansakra_m1")
+                               cl.sendMessage(msg.to, "On...")
                                cl.sendMessage(msg.to, None, contentMetadata={"STKID":"15996978","STKPKGID":"1416471","STKVER":"1"}, contentType=7)
 
                         elif cmd == "reinvite":
@@ -4702,11 +4645,6 @@ def bot(op):
                                gs = kf.getGroup(msg.to)
                                gs = kj.getGroup(msg.to)
                                gs = sw.getGroup(msg.to)
-                              # gs = #k3.getGroup(msg.to)
-                               #gs = #k4.getGroup(msg.to)
-                               #gs = #k5.getGroup(msg.to)
-                              # gs = #k6.getGroup(msg.to)
-                               #gs = #k7.getGroup(msg.to)
                                cl.sendMessage(to, "█░░╦─╦╔╗╦─╔╗╔╗╔╦╗╔╗░░█\n█░░║║║╠─║─║─║║║║║╠─░░█\n█░░╚╩╝╚╝╚╝╚╝╚╝╩─╩╚╝░░█\nASSALAMUALAIKUM\n")
                                ki.sendMessage(to, 
 "  ╭━Ⓓ✒Ⓡ✒ⒼⓄ✒Ⓝ✒\n"
