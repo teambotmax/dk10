@@ -509,73 +509,78 @@ def help():
 def help1():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage1 = "🔑❂͜͡➣ " + key + " [🔰Ⓓⓚ~ⒷⓄⓣ☯t]\n" + \
-                  "🔑❂͜͡➣ " + key + "ᴛᴀɢᴀʟʟ/ɴᴀʜ\n" + \
-                  "🔑❂͜͡➣ " + key + "/ข้อมูลกลุ่ม\n" + \
-                  "🔑❂͜͡➣ " + key + "/เปิดลิ้ง\n" + \
-                  "🔑❂͜͡➣ " + key + "/ปิดลิ้ง\n" + \
-                  "🔑❂͜͡➣ " + key + "/ลิ้งกลุ่ม\n" + \
-                  "🔑❂͜͡➣ " + key + "/กลุ่ม\n" + \
-                  "🔑❂͜͡➣ " + key + "Kibar\n" + \
-                  "🔑❂͜͡➣ " + key + "Dkbot\n" + \
-                  "🔑❂͜͡➣ " + key + "Harga\n" + \
-                  "🔑❂͜͡➣ " + key + "Promo\n" + \
-                  "🔑❂͜͡➣ " + key + "/ข้อมูลกลุ่ม「ลำดับ」\n" + \
-                  "🔑❂͜͡➣ " + key + "ɪɴғᴏᴍᴇᴍ「ลำดับ」\n" + \
-                  "🔑❂͜͡➣ " + key + "ʀᴇᴍᴏᴠᴇ ᴄʜᴀᴛ\n" + \
-                  "🔑❂͜͡➣ " + key + "/ไอดี「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "/ขโมย「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "/ปก「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "/ก็อป「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "/คืนร่าง\n" + \
-                  "🔑❂͜͡➣ " + key + "ʙᴀᴄᴋᴜᴘ\n" + \
-                   "🔑❂͜͡➣" + key + "/ลบรัน\n" + \
-                  "🔑❂͜͡➣ " + key + "sᴘᴀᴍᴄᴀʟʟᴛᴏ 「จำนวน」 「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "/แทค「จำนวน」\n" + \
-                  "🔑❂͜͡➣ " + key + "/แทค「@」\n" + \
-                  "🔑❂͜͡➣ " + key + "/รัวคอล「จำนวน」\n" + \
-                   "🔑❂͜͡➣ " + key + "/รัวคอล\n" + \
-                   "🔑❂͜͡➣ " + key + "/เปลี่ยนชื่อ「ชื่อ」\n" + \
-                   "🔑❂͜͡➣ " + key + "/เปลี่ยนรูป「ส่งรูป」\n" + \
-                   "🔑❂͜͡➣ " + key + "/รูปวิดีโอ 「ส่งวิดีโอ」\n" + \
-                   "🔑❂͜͡➣ " + key + "/เปลี่ยนรูปกลุ่ม\n" + \
-                   "🔑❂͜͡➣ " + key + "/ของขวัญ:「ไอดี」「จำนวน」\n" + \
-                   "🔑❂͜͡➣ " + key + "/แสปม:「ไอดี」「จำนวน」\n" + \
-                   "「🔑」  ʙʏ: Dzulkifli\n" + \
-                   "  Creator:  line.me/ti/p/~reza.p.i.p"
+    helpMessage1 = "🇹🇭❂͜͡➣ " + key + " [🔰Ⓓⓚ~ⒷⓄⓣ☯t]\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ᴛᴀɢᴀʟʟ/ɴᴀʜ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ข้อมูลกลุ่ม\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/เปิดลิ้ง\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ปิดลิ้ง\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ลิ้งกลุ่ม\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/กลุ่ม\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ข้อมูลกลุ่ม「ลำดับ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ลบแชท\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ไอดี「@」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ขโมย「@」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ปก「@」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ก็อป「@」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/คืนร่าง\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ลบรัน\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "sᴘᴀᴍᴄᴀʟʟᴛᴏ 「จำนวน」 「@」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/แทค「จำนวน」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/แทค「@」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/รัวคอล「จำนวน」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/รัวคอล\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/เปลี่ยนชื่อ「ชื่อ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/เปลี่ยนรูป「ส่งรูป」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/รูปวิดีโอ 「ส่งวิดีโอ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/เปลี่ยนรูปกลุ่ม\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/ของขวัญ:「ไอดี」「จำนวน」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "/แสปม:「ไอดี」「จำนวน」\n" + \
+                  "🇹🇭❂͜͡➣ กรุณาใส่เครื่องหมาย / นำหน้าคำสั่งที่เป็นภาษาไทย\n" + \
+                  "🇹🇭❂͜͡➣ BY: SELFBOT-BY:MAX"
                   
     return helpMessage1
 
 def help2():
     key = Setmain["keyCommand"]
     key = key.title()
-    helpMessage2= "      「✭PENGATURAN JBP✭」\n" + \
-                  "「🔑」 " + key + "เปิดเชิญ\n" + \
-                  "「🔑」 " + key + "เปิดสติกเกอร์\n" + \
-                  "「🔑」 " + key + "เปิดยกเลิก\n" + \
-                  "「🔑」 " + key + "เปิดคนแอบ\n" + \
-                  "「🔑」 " + key + "เปิดแทค\n" + \
-                  "「🔑」 " + key + "เปิดเชคโพส\n" + \
-                  "「🔑」 " + key + "เปิดคท\n" + \
-                  "「🔑」 " + key + "เปิดเข้ากลุ่ม\n" + \
-                  "「🔑」 " + key + "เปิดคนแอด\n" + \
-                  "「🔑]  " + key + "ᴡᴇʟᴄᴏᴍᴇ「ᴏɴ/ᴏғғ」\n" + \
-                  "「🔑]  " + key + "เปิดคนออก\n" + \
-                  "「🔑] " + key + "เปิดมุดลิ้ง\n" + \
-                  "「🔑] " + key + "ข้อความคนแอบ\n" + \
-                  "「🔑] " + key + "ข้อความแสปม\n" + \
-                  "「🔑] " + key + "ข้อความคนแอด\n" + \
-                  "「🔑] " + key + "ข้อความคนแทค\n" + \
-                  "「🔑] " + key + "ข้อความคนออก\n" + \
-                  "「🔑] " + key + "ข้อความคนเข้า\n" + \
-                  "「🔑] " + key + "ตั้งคนแอบ「ᴛᴇxᴛ」\n" + \
-                  "「🔑] " + key + "ตั้งแสปม「ᴛᴇxᴛ」」\n" + \
-                  "「🔑] " + key + "ตั้งคนแอด「ᴛᴇxᴛ」\n" + \
-                  "「🔑] " + key + "ตั้งแทค「ᴛᴇxᴛ」\n" + \
-                  "「🔑] " + key + "ตั้งคนออก「ᴛᴇxᴛ」\n" + \
-                  "「🔑] " + key + "ตั้งคนเข้า「ᴛᴇxᴛ」\n" + \
-                  "「กรุณาใส่เครื่องหมาย / นำหน้าคำสั่งที่เป็นภาษาไทย」\n\n" + \
-                  "🔑 Creator:  line.me/ti/p/~maxsett"
+    helpMessage2= "      「 คำสั่ง2 」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดเชิญ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดเชิญ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดสติกเกอร์\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดสติกเกอร์\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดยกเลิก\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดยกเลิก\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดคนแอบ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดคนแอบ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดแทค\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดแทค\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดเชคโพส\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดเชคโพส\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดคท\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดคท\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดเข้ากลุ่ม\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดเข้ากลุ่ม\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดคนแอด\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดคนแอด\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ᴡᴇʟᴄᴏᴍᴇ「ᴏɴ/ᴏғғ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดคนออก\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ปิดคนออก\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดมุดลิ้ง\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เปิดมุดลิ้ง\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ข้อความคนแอบ\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ข้อความแสปม\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ข้อความคนแอด\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ข้อความคนแทค\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ข้อความคนออก\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ข้อความคนเข้า\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ตั้งคนแอบ「ข้อความ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ตั้งแสปม「ข้อความ」」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ตั้งคนแอด「ข้อความ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ตั้งแทค「ข้อความ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ตั้งคนออก「ข้อความ」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ตั้งคนเข้า「ข้อความ」\n" + \
+                  "🇹🇭❂͜͡➣ กรุณาใส่เครื่องหมาย / นำหน้าคำสั่งที่เป็นภาษาไทย\n" + \
+                  "🇹🇭❂͜͡➣ BY: SELFBOT-BY:MAX"
 
     return helpMessage2
 
@@ -583,46 +588,46 @@ def help3():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage3 = "      「✭MUSIK JBP✭」\n" + \
-                  "「🔑」 " + key + "Musik「Nama Penyanyi」\n" + \
-                  "「🔑」 " + key + "Listmp3\n" + \
-                  "「🔑」 " + key + "Addmp3「Teks」\n" + \
-                  "「🔑」 " + key + "Dellmp3「Teks」\n" + \
-                  "      「✭VIDEO DK✭」\n" + \
-                  "「🔑」 " + key + "Listvideo\n" + \
-                  "「🔑」 " + key + "Addvideo「Teks」\n" + \
-                  "「🔑」 " + key + "Dellvideo「Teks」\n" + \
-                  "      「✭GAMBAR DK✭」\n" + \
-                  "「🔑」 " + key + "Listimage\n" + \
-                  "「🔑」 " + key + "Addimg「Teks」\n" + \
-                  "「🔑」 " + key + "Dellimg「Teks」\n" + \
-                  "      「✭STICKER JBP✭」\n" + \
-                  "「🔑」 " + key + "Liststicker\n" + \
-                  "「🔑」 " + key + "Addsticker「Teks」\n" + \
-                  "「🔑」 " + key + "Dellsticker「Teks」\n" + \
-                  "「🔑」 " + key + "Kode wilayah\n" + \
-                  "      「✭MEDIA LAIN JBP✭」\n" + \
-                  "「🔑」 " + key + "Lihat 「Kode wilayah cctv」\n" + \
-                  "「🔑」 " + key + "Youtube「Query」\n" + \
-                  "「🔑」 " + key + "Get-fs「Query」\n" + \
-                  "「🔑」 " + key + "Get-line「ID Line」\n" + \
-                  "「🔑」 " + key + "Get-apk「Query」\n" + \
-                  "「🔑」 " + key + "Get-gif「Query」\n" + \
-                  "「🔑」 " + key + "Get-xxx「Query」\n" + \
-                  "「🔑」 " + key + "Get-anime「Query」\n" + \
-                  "「🔑」 " + key + "Get-mimpi「Query」\n" + \
-                  "「🔑」 " + key + "Get-audio「Query」\n" + \
-                  "「🔑」 " + key + "Get-mp3「Query」\n" + \
-                  "「🔑」 " + key + "Get-video「Query」\n" + \
-                  "「🔑」 " + key + "Get-bintang「Zodiak」\n" + \
-                  "「🔑」 " + key + "Get-zodiak「Zodiak」\n" + \
-                  "「🔑」 " + key + "Get-sholat「Nama Kota」\n" + \
-                  "「🔑」 " + key + "Get-cuaca「Nama Kota」\n" + \
-                  "「🔑」 " + key + "Get-lokasi「Nama Kota」\n" + \
-                  "「🔑」 " + key + "Get-lirik「Judul Lagu」\n" + \
-                  "「🔑」 " + key + "Get-instagram「User Name」\n" + \
-                  "「🔑」 " + key + "Get-date「tgl-bln-thn」\n" + \
-                  "⟗   ⃢🕸ʙʏ: Dzulkifli🕸 ⃢   ⟗\n" + \
-                  "  Creator:  line.me/ti/p/~reza.p.i.p"
+                  "🇹🇭❂͜͡➣ " + key + "Musik「Nama Penyanyi」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Listmp3\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Addmp3「Teks」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Dellmp3「Teks」\n" + \
+                  "🇹🇭❂͜͡➣   「✭VIDEO DK✭」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Listvideo\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Addvideo「Teks」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Dellvideo「Teks」\n" + \
+                  "🇹🇭❂͜͡➣   「✭GAMBAR DK✭」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Listimage\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Addimg「Teks」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Dellimg「Teks」\n" + \
+                  "🇹🇭❂͜͡➣   「✭STICKER JBP✭」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Liststicker\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Addsticker「Teks」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Dellsticker「Teks」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Kode wilayah\n" + \
+                  "🇹🇭❂͜͡➣   「✭MEDIA LAIN JBP✭」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Lihat 「Kode wilayah cctv」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Youtube「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-fs「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-line「ID Line」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-apk「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-gif「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-xxx「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-anime「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-mimpi「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-audio「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-mp3「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-video「Query」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-bintang「Zodiak」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-zodiak「Zodiak」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-sholat「Nama Kota」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-cuaca「Nama Kota」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-lokasi「Nama Kota」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-lirik「Judul Lagu」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-instagram「User Name」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "Get-date「tgl-bln-thn」\n" + \
+                  "🇹🇭❂͜͡➣ กรุณาใส่เครื่องหมาย / นำหน้าคำสั่งที่เป็นภาษาไทย\n" + \
+                  "🇹🇭❂͜͡➣ BY: SELFBOT-BY:MAX"
 
     return helpMessage3
 
