@@ -545,6 +545,7 @@ def help2():
     key = Setmain["keyCommand"]
     key = key.title()
     helpMessage2= "      「 🤖 คำสั่ง2 🤖 」\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "ᴡᴇʟᴄᴏᴍᴇ「ᴏɴ/ᴏғғ」\n" + \
                   "🇹🇭❂͜͡➣ " + key + "เปิดเชิญ\n" + \
                   "🇹🇭❂͜͡➣ " + key + "เปิดเชิญ\n" + \
                   "🇹🇭❂͜͡➣ " + key + "เปิดสติกเกอร์\n" + \
@@ -563,7 +564,6 @@ def help2():
                   "🇹🇭❂͜͡➣ " + key + "ปิดเข้ากลุ่ม\n" + \
                   "🇹🇭❂͜͡➣ " + key + "เปิดคนแอด\n" + \
                   "🇹🇭❂͜͡➣ " + key + "ปิดคนแอด\n" + \
-                  "🇹🇭❂͜͡➣ " + key + "ᴡᴇʟᴄᴏᴍᴇ「ᴏɴ/ᴏғғ」\n" + \
                   "🇹🇭❂͜͡➣ " + key + "เปิดคนออก\n" + \
                   "🇹🇭❂͜͡➣ " + key + "ปิดคนออก\n" + \
                   "🇹🇭❂͜͡➣ " + key + "เปิดมุดลิ้ง\n" + \
@@ -3811,15 +3811,15 @@ def bot(op):
                                    kg.removeAllMessages(op.param2)
                                    kh.removeAllMessages(op.param2)
                                    sw.removeAllMessages(op.param2)
-                                   ki.sendMessage(msg.to,"Chat dibersihkan...")
-                                   kk.sendMessage(msg.to,"Chat dibersihkan...")
-                                   kc.sendMessage(msg.to,"Chat dibersihkan...")
-                                   kb.sendMessage(msg.to,"Chat dibersihkan...")
-                                   kd.sendMessage(msg.to,"Chat dibersihkan...")
-                                   ke.sendMessage(msg.to,"Chat dibersihkan...")
-                                   kf.sendMessage(msg.to,"Chat dibersihkan...")
-                                   kg.sendMessage(msg.to,"Chat dibersihkan...")
-                                   kh.sendMessage(msg.to,"Chat dibersihkan...")
+                                   ki.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   kk.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   kc.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   kb.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   kd.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   ke.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   kf.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   kg.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
+                                   kh.sendMessage(msg.to,"ลบข้อความในแชททั้งหมดเรียบร้อย...")
                                except:
                                    pass
 
@@ -3862,7 +3862,7 @@ def bot(op):
                                     kd.leaveGroup(i)
                                     ke.leaveGroup(i)
                                     kf.leaveGroup(i)
-                                    cl.sendMessage(msg.to,"Berhasil keluar di grup " +str(ginfo.name))
+                                    cl.sendMessage(msg.to,"บอทออกแล้ว กลุ่ม " +str(ginfo.name))
 
                                 
                         elif text.lower() == "mykey":
@@ -3890,7 +3890,7 @@ def bot(op):
                         elif cmd == "/รีบอท":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                               sendMention(msg.to, sender, "「 Restarting 」\nUser ", "\nTunggu sebentar...")
+                               sendMention(msg.to, sender, "「 รีบูสระบบบอท 」\nUser ", "\nกรุณาทำการล็อคอินอีกครั้ง...")
                                Setmain["restartPoint"] = msg.to
                                restartBot()
                             
@@ -3903,7 +3903,7 @@ def bot(op):
                                 zx = ""
                                 zxc = ""
                                 zx2 = []
-                                xpesan =  "「 เวลาทำงานของบอท 」\n• User Self : "
+                                xpesan =  "「 เวลาทำงานของบอท 」\n• ชื่อผู้ใช้ : "
                                 ret_ = "• {}".format(str(bot))
                                 ry = str(ryan.displayName)
                                 pesan = ''
@@ -3964,15 +3964,15 @@ def bot(op):
                                 timeCreated = []
                                 timeCreated.append(time.strftime("%d-%m-%Y [ %H:%M:%S ]", time.localtime(int(G.createdTime) / 1000)))
                                 ret_ += "「 Group Info 」"
-                                ret_ += "\n「🔑」  ɴᴀᴍᴀ ɢʀᴜᴘ : {}".format(G.name)
-                                ret_ += "\n「🔑」 ID Group : {}".format(G.id)
-                                ret_ += "\n「🔑」 Pembuat : {}".format(gCreator)
-                                ret_ += "\n「🔑」 Waktu Dibuat : {}".format(str(timeCreated))
-                                ret_ += "\n「🔑」 Jumlah Member : {}".format(str(len(G.members)))
-                                ret_ += "\n「🔑」 Jumlah Pending : {}".format(gPending)
-                                ret_ += "\n「🔑」 Group Qr : {}".format(gQr)
-                                ret_ += "\n「🔑」 Group Ticket : {}".format(gTicket)
-                                ret_ += "\n「🔑」 Picture Url : http://dl.profile.line-cdn.net/{}".format(G.pictureStatus)
+                                ret_ += "\n「🇹🇭」  ɴᴀᴍᴀ ɢʀᴜᴘ : {}".format(G.name)
+                                ret_ += "\n「🇹🇭」 ID Group : {}".format(G.id)
+                                ret_ += "\n「🇹🇭」 Pembuat : {}".format(gCreator)
+                                ret_ += "\n「🇹🇭」 Waktu Dibuat : {}".format(str(timeCreated))
+                                ret_ += "\n「🇹🇭」 Jumlah Member : {}".format(str(len(G.members)))
+                                ret_ += "\n「🇹🇭」 Jumlah Pending : {}".format(gPending)
+                                ret_ += "\n「🇹🇭」 Group Qr : {}".format(gQr)
+                                ret_ += "\n「🇹🇭」 Group Ticket : {}".format(gTicket)
+                                ret_ += "\n「🇹🇭」 Picture Url : http://dl.profile.line-cdn.net/{}".format(G.pictureStatus)
                                 ret_ += ""
                                 cl.sendMessage(to, str(ret_))
                                 cl.sendImageWithURL(msg.to, 'http://dl.profile.line-cdn.net/'+G.pictureStatus)
@@ -4174,7 +4174,7 @@ def bot(op):
                                    a = a + 1
                                    end = "\n"
                                    ma += "╠ " + str(a) + ". " +G.name+ "\n"
-                               cl.sendMessage(msg.to,"╔══[ GROUP LIST ]\n║\n"+ma+"║\n╚══[ Total「"+str(len(gid))+"」Groups ]")
+                               cl.sendMessage(msg.to,"╔══[ กลุ่มที่มีทั้งหมด ]\n║\n"+ma+"║\n╚══[ จำนวน「"+str(len(gid))+"」กลุ่ม ]")
 
                         elif cmd == "/กลุ่ม1":
                             if msg._from in admin:
@@ -4231,7 +4231,7 @@ def bot(op):
                                    X = cl.getGroup(msg.to)
                                    X.preventedJoinByTicket = False
                                    cl.updateGroup(X)
-                                   cl.sendMessage(msg.to, "Url Opened")
+                                   cl.sendMessage(msg.to, "เปิดลิ้งเรียบร้อย...")
 
                         elif cmd == "/ปิดลิ้ง":
                           if wait["selfbot"] == True:
@@ -4240,7 +4240,7 @@ def bot(op):
                                    X = cl.getGroup(msg.to)
                                    X.preventedJoinByTicket = True
                                    cl.updateGroup(X)
-                                   cl.sendMessage(msg.to, "Url Closed")
+                                   cl.sendMessage(msg.to, "ปิดลิ้งเรียบร้อย...")
 
                         elif cmd == "ลิ้งกลุ่ม":
                           if wait["selfbot"] == True:
@@ -4251,7 +4251,7 @@ def bot(op):
                                       x.preventedJoinByTicket = False
                                       cl.updateGroup(x)
                                    gurl = cl.reissueGroupTicket(msg.to)
-                                   cl.sendMessage(msg.to, "Grup "+str(x.name)+ "\nUrl grup : http://line.me/R/ti/g/"+gurl)
+                                   cl.sendMessage(msg.to, "กลุ่ม "+str(x.name)+ "\nลิ้งกลุ่ม 🕵\nhttp://line.me/R/ti/g/"+gurl)
 #===========BOT UPDATE============#
                         elif cmd == "/เปลี่ยนรูปกลุ่ม":
                           if wait["selfbot"] == True:
@@ -4280,7 +4280,7 @@ def bot(op):
                                 profile = cl.getProfile()
                                 profile.displayName = string
                                 cl.updateProfile(profile)
-                                cl.sendMessage(msg.to,"Nama diganti jadi " + string + "")
+                                cl.sendMessage(msg.to,"คุณได้เปลี่ยนชื่อเป็น " + string + "")
 #KICKALL
                         elif "!maxkick" in msg.text:
                           if msg._from in admin:
@@ -4329,42 +4329,42 @@ def bot(op):
                         elif cmd == "/รูป2":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Bmid] = True
-                                kk.sendMessage(msg.to,"Send your images.....")
+                                kk.sendMessage(msg.to,"ส่งรูป.....")
                                 
                         elif cmd == "/รูป3":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Cmid] = True
-                                kc.sendMessage(msg.to,"Send your images.....")
+                                kc.sendMessage(msg.to,"ส่งรูป.....")
                                 
                         elif cmd == "/รูป4":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Dmid] = True
-                                kb.sendMessage(msg.to,"Send your images.....")
+                                kb.sendMessage(msg.to,"ส่งรูป.....")
         
                         elif cmd == "/รูป5":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Emid] = True
-                                kd.sendMessage(msg.to,"Send your images.....")         
+                                kd.sendMessage(msg.to,"ส่งรูป.....")         
                                 
                         elif cmd == "/รูป6":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Fmid] = True
-                                ke.sendMessage(msg.to,"Send your images.....")        
+                                ke.sendMessage(msg.to,"ส่งรูป.....")        
                                 
                         elif cmd == "/รูป7":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Gmid] = True
-                                kf.sendMessage(msg.to,"Send your images.....")       
+                                kf.sendMessage(msg.to,"ส่งรูป.....")       
                                 
                         elif cmd == "/รูป8":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Jmid] = True
-                                kj.sendMessage(msg.to,"Send your images.....")         
+                                kj.sendMessage(msg.to,"ส่งรูป.....")         
                                 
                         elif cmd == "/รูป9":
                             if msg._from in admin:
                                 Setmain["ARfoto"][Zmid] = True
-                                sw.sendMessage(msg.to,"Send your images.....")      
+                                sw.sendMessage(msg.to,"ส่งรูป.....")      
                          
                         elif cmd.startswith("/ชื่อ1 "):
                           if msg._from in admin:
