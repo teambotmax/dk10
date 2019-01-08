@@ -167,7 +167,7 @@ wait = {
     "invite":False,
     'autoJoin':False,
     'autoAdd':False,
-    'autoBlock':False,
+    'autoBlock':True,
     'Timeline':False,
     'autoLeave':False,
     'autoLeave1':False,
@@ -1015,15 +1015,19 @@ def bot(op):
                                                                                pass  
                 return
 
-        if op.type == 0:
-            return
         if op.type == 5:
-            if wait["autoAdd"] == True:
-                if op.param2 not in Bots and op.param2 not in owner and op.param2 not in admin and op.param2 not in staff:
-                    if (wait["message"] in [" "," ","\n",None]):
-                        pass
-                    else:
-                        cl.sendMessage(op.param1, wait["message"])
+              if wait["autoAdd"] == True:
+                  cl.findAndAddContactsByMid(op.param1)
+                  sendMention(op.param1, op.param1, "Haii ", ", terimakasih sudah add saya")
+                  cl.sendText(op.param1, wait["message"])
+                  cl.sendContact(op.param1, "u954d9f74bc255dad64dc89bf1601469c")
+
+        if op.type == 5:
+            print ("[ 5 ] NOTIFIED AUTO BLOCK CONTACT")
+            if wait["autoBlock"] == True:
+                cl.sendText(op.param1, wait["message"])
+                cl.sendContact(op.param1, "u954d9f74bc255dad64dc89bf1601469c")
+                cl.blockContact(op.param1)
 
         if op.type == 19:
             if op.param1 in protectkick:
@@ -6842,13 +6846,13 @@ def bot(op):
                                 wait["mentionKick"] = False
                                 cl.sendText(msg.to,"「 Status Notag 」\nNotag telah dinonaktifkan")
 
-                        elif cmd == "/เปิดคท" or text.lower() == 'contact on':
+                        elif cmd == "เปิดคท" or text.lower() == 'contact on':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["contact"] = True
                                 sendMention(msg.to, sender, "「 Status Contact 」\nUser ", "\nSilahkan kirim kontaknya,\nJika sudah selesai, ketik contact off")
 
-                        elif cmd == "/ปิดคท" or text.lower() == 'contact off':
+                        elif cmd == "ปิดคท" or text.lower() == 'contact off':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 wait["contact"] = False
