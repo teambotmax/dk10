@@ -31,29 +31,29 @@ ki = LineClient(authToken="")
 ki.log("Auth Token : " + str(ki.authToken))
 ki.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-#kk = LineClient(authToken="")
-#kk.log("Auth Token : " + str(kk.authToken))
-#kk.log("Channel Access Token : " + str(channel.channelAccessToken))
+kk = LineClient(authToken="")
+kk.log("Auth Token : " + str(kk.authToken))
+kk.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-#kc = LineClient(authToken="")
-#kc.log("Auth Token : " + str(kc.authToken))
-#kc.log("Channel Access Token : " + str(channel.channelAccessToken))
+kc = LineClient(authToken="")
+kc.log("Auth Token : " + str(kc.authToken))
+kc.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-#kb = LineClient(authToken="")
-#kb.log("Auth Token : " + str(kb.authToken))
-#kb.log("Channel Access Token : " + str(channel.channelAccessToken))
+kb = LineClient(authToken="")
+kb.log("Auth Token : " + str(kb.authToken))
+kb.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-#kd = LineClient(authToken="")
-#kd.log("Auth Token : " + str(kd.authToken))
-#kd.log("Channel Access Token : " + str(channel.channelAccessToken))
+kd = LineClient(authToken="")
+kd.log("Auth Token : " + str(kd.authToken))
+kd.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-#ke = LineClient(authToken="")
-#ke.log("Auth Token : " + str(ke.authToken))
-#ke.log("Channel Access Token : " + str(channel.channelAccessToken))
+ke = LineClient(authToken="")
+ke.log("Auth Token : " + str(ke.authToken))
+ke.log("Channel Access Token : " + str(channel.channelAccessToken))
 
-#kf = LineClient(authToken="")
-#kf.log("Auth Token : " + str(kf.authToken))
-#kf.log("Channel Access Token : " + str(channel.channelAccessToken))
+kf = LineClient(authToken="")
+kf.log("Auth Token : " + str(kf.authToken))
+kf.log("Channel Access Token : " + str(channel.channelAccessToken))
 
 kj = LineClient(authToken="")
 kj.log("Auth Token : " + str(kj.authToken))
@@ -72,18 +72,18 @@ admin = ["u954d9f74bc255dad64dc89bf1601469c"]
 staff = ["u954d9f74bc255dad64dc89bf1601469c"]
 mid = cl.getProfile().mid
 Amid = ki.getProfile().mid
-#Bmid = kk.getProfile().mid
-#Cmid = kc.getProfile().mid
-#Dmid = kb.getProfile().mid
-#Emid = kd.getProfile().mid
-#Fmid = ke.getProfile().mid
-#Gmid = kf.getProfile().mid
+Bmid = kk.getProfile().mid
+Cmid = kc.getProfile().mid
+Dmid = kb.getProfile().mid
+Emid = kd.getProfile().mid
+Fmid = ke.getProfile().mid
+Gmid = kf.getProfile().mid
 Jmid = kj.getProfile().mid
 Zmid = sw.getProfile().mid
-KAC = [cl,ki,kj,sw]
-ABC = [cl,ki,kj,sw]
+KAC = [cl,ki,kk,kc,kb,kd,ke,kf,kj,sw]
+ABC = [cl,ki,kk,kc,kb,kd,ke,kf,kj,sw]
 GHOST = [kj,sw]
-Bots = [mid,Amid,Jmid,Zmid]
+Bots = [mid,Amid,Bmid,Dmid,Emid,Fmid,Gmid,Jmid,Zmid]
 Saints = admin + staff
 
 protectqr = []
@@ -100,12 +100,12 @@ msg_dict = {}
 msg_dict1 = {}
 
 responsename1 = ki.getProfile().displayName
-#responsename2 = kk.getProfile().displayName
-#responsename3 = kc.getProfile().displayName
-#responsename4 = kb.getProfile().displayName
-#responsename5 = kd.getProfile().displayName
-#responsename6 = ke.getProfile().displayName
-#responsename7 = kf.getProfile().displayName
+responsename2 = kk.getProfile().displayName
+responsename3 = kc.getProfile().displayName
+responsename4 = kb.getProfile().displayName
+responsename5 = kd.getProfile().displayName
+responsename6 = ke.getProfile().displayName
+responsename7 = kf.getProfile().displayName
 
 settings = {
     "Picture":False,
