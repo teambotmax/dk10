@@ -485,6 +485,7 @@ def help():
                   "🇹🇭❂͜͡➣ " + key + "คิกออก\n" + \
                   "🇹🇭❂͜͡➣ " + key + "ผีเข้า\n" + \
                   "🇹🇭❂͜͡➣ " + key + "ผีออก\n" + \
+                  "🇹🇭❂͜͡➣ " + key + "เชิญผี\n" + \
                   "🇹🇭         🤖 คำสั่งบอท 🤖\n" + \
                   "🇹🇭❂͜͡➣ " + key + "บอท\n" + \
                   "🇹🇭❂͜͡➣ " + key + "เชิญบอท\n" + \
@@ -500,9 +501,7 @@ def help():
                   "🇹🇭❂͜͡➣ " + key + "Ghost on\off\n" + \
                   "🇹🇭❂͜͡➣ " + key + "Allpro on\off\n" + \
                   "🇹🇭❂͜͡➣ " + key + "Antijs on\n" + \
-                  "🇹🇭❂͜͡➣ " + key + "Antijs stay\n" + \
-                  "🇹🇭❂͜͡➣ " + key + "Ghost in\n" + \
-                  "🇹🇭❂͜͡➣ กรุณาใส่เครื่องหมาย / นำหน้าคำสั่งที่เป็นภาษาไทย\n" + \
+                  "🇹🇭❂͜͡➣ การใช้เชลบอท.../nกรุณาใส่เครื่องหมาย / นำหน้าคำสั่งที่เป็นภาษาไทย\n" + \
                   "🇹🇭❂͜͡➣ BY: SELFBOT-BY:MAX"
 
     return helpMessage
@@ -4535,7 +4534,7 @@ def bot(op):
                                           print (msg.to,[g.mid])
                                       except:
                                           cl.sendMessage(msg.to,"Bye all")
-                        elif ("Kick " in msg.text):
+                        elif ("Vk " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -4787,7 +4786,7 @@ def bot(op):
                                 wait["Talkdblacklist"] = True
                                 cl.sendMessage(msg.to,"Please send to contact...")
 
-                        elif ("ติดดำ " in msg.text):
+                        elif ("/ติดดำ " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -4802,7 +4801,7 @@ def bot(op):
                                        except:
                                            pass
 
-                        elif ("ล้างดำ " in msg.text):
+                        elif ("/ล้างดำ " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -5063,7 +5062,7 @@ def bot(op):
                                elapsed_time = time.time() - start
                                sw.sendMessage(msg.to, "{} detik".format(str(elapsed_time)))
                                 
-                        elif cmd == "เปิดอ่าน":
+                        elif cmd == "/เปิดอ่าน":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                  tz = pytz.timezone("Asia/Jakarta")
@@ -5072,7 +5071,7 @@ def bot(op):
                                  Setmain['RAreadMember'][msg.to] = {}
                                  cl.sendText(msg.to, "「 Status Lurking 」\nBerhasil diaktifkan, selanjutnya ketik lurkers\n\n• Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n• Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d'))
                             
-                        elif cmd == "ปิดอ่าน":
+                        elif cmd == "/ปิดอ่าน":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                  tz = pytz.timezone("Asia/Jakarta")
@@ -5081,7 +5080,7 @@ def bot(op):
                                  del Setmain['RAreadMember'][msg.to]
                                  cl.sendText(msg.to, "「 Status Lurking 」\nBerhasil dimatikan\n\n• Jam [ "+ datetime.strftime(timeNow,'%H:%M:%S')+" ]"+"\n• Tanggal : "+ datetime.strftime(timeNow,'%Y-%m-%d'))
                             
-                        elif cmd == "อ่าน":
+                        elif cmd == "/อ่าน":
                           if wait["selfbot"] == True:
                            if msg._from in admin:
                             if msg.to in Setmain['RAreadPoint']:
