@@ -106,6 +106,8 @@ responsename4 = kb.getProfile().displayName
 responsename5 = kd.getProfile().displayName
 responsename6 = ke.getProfile().displayName
 responsename7 = kf.getProfile().displayName
+responsename8 = kj.getProfile().displayName
+responsename9 = sw.getProfile().displayName
 
 settings = {
     "Picture":False,
@@ -4305,7 +4307,7 @@ def bot(op):
                                           print (msg.to,[g.mid])
                                       except Exception as e:
                                           break
-                        elif ("Kick " in msg.text):
+                        elif ("Vkick " in msg.text):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                key = eval(msg.contentMetadata["MENTION"])
@@ -4468,9 +4470,7 @@ def bot(op):
                                cl.sendContact(to, Gmid)
                                cl.sendContact(to, Jmid)
                                cl.sendContact(to, Zmid)
-                               #cl.sendMessage(msg.to, "On...")
-                               #cl.sendMessage(msg.to, None, contentMetadata={"STKID":"15996978","STKPKGID":"1416471","STKVER":"1"}, contentType=7)
-
+                               
                         elif cmd == "reinvite":
                             if msg._from in admin:
                                 G = cl.getGroup(msg.to)
@@ -4558,8 +4558,6 @@ def bot(op):
                                 kd.leaveGroup(msg.to)
                                 ke.leaveGroup(msg.to)
                                 kf.leaveGroup(msg.to)
-                                kg.leaveGroup(msg.to)
-                                kh.leaveGroup(msg.to)
                                 kj.leaveGroup(msg.to)
                                 sw.leaveGroup(msg.to)
                                 G = cl.getGroup(msg.to)
@@ -4575,8 +4573,6 @@ def bot(op):
                                 kd.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 ke.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kf.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kg.acceptGroupInvitationByTicket(msg.to,Ticket)
-                                kh.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 kj.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 sw.acceptGroupInvitationByTicket(msg.to,Ticket)
                                 G = ki.getGroup(msg.to)
@@ -4719,17 +4715,16 @@ def bot(op):
                         elif cmd == "respon" or cmd == "pasukan":
                           if wait["selfbot"] == True:
                             if msg._from in admin:
-                                cl.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 1")
-                                ki.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 2")
-                                kk.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 3")
-                                kc.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 4")
-                                kb.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 5")
-                                kd.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 6")
-                                ke.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 7")
-                                kf.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 8")
-                                kj.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 9")
-                                sw.sendMessage(msg.to, "🕵 SELFBOT-BY:MAX 🕵 10")
-
+                                ki.sendMessage(msg.to,responsename1)
+                                kk.sendMessage(msg.to,responsename2)
+                                kc.sendMessage(msg.to,responsename3)
+                                kb.sendMessage(msg.to,responsename4)
+                                kd.sendMessage(msg.to,responsename5)
+                                ke.sendMessage(msg.to,responsename6)
+                                kf.sendMessage(msg.to,responsename7)
+                                kj.sendMessage(msg.to,responsename8)
+                                sw.sendMessage(msg.to,responsename9)
+       
                         elif cmd == "contact admin" or text.lower() == 'contact admin':
                             if msg._from in admin:
                                 ma = ""
