@@ -7033,13 +7033,13 @@ def bot(op):
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 settings["autoJoinTicket"] = True
-                                sendMention(msg.to, sender, "「 Status Jointicket 」\nUser ", "\nSilahkan kirim link grupnya,\nJika sudah selesai, ketik jointicket off")
+                                sendMention(msg.to, sender, "「 มุดลิ้ง 」\nผู้ใช้ ", "\nเปิดมุดลิ้งเรียบร้อย")
 
                         elif cmd == "/ปิดมุดลิ้ง" or text.lower() == 'jointicket off':
                           if wait["selfbot"] == True:
                             if msg._from in admin:
                                 settings["autoJoinTicket"] = False
-                                cl.sendText(msg.to,"「 Status Jointicket 」\nJointicket telah dinonaktifkan")
+                                cl.sendText(msg.to,"「 มุดลิ้ง 」\nปิดมุดลิ้งเรียบร้อย")
 #===========COMMAND SET============#
                         elif '/ตั้งคนแอด ' in msg.text:
                            if msg._from in admin:
@@ -7048,7 +7048,7 @@ def bot(op):
                                   cl.sendMessage(msg.to, "Gagal mengganti Pesan Msg")
                               else:
                                   wait["message"] = spl
-                                  cl.sendMessage(msg.to, "「 Berhasil Diganti 」\nPesan Msg diganti jadi :\n\n{}".format(str(spl)))
+                                  cl.sendMessage(msg.to, "「 ตั้งข้อความคนแอด 」\n\n{}".format(str(spl)))
 
                         elif '/ตั้งคนเข้า ' in msg.text:
                            if msg._from in admin:
@@ -7057,7 +7057,7 @@ def bot(op):
                                   cl.sendMessage(msg.to, "Gagal mengganti Welcome Msg")
                               else:
                                   wait["welcome"] = spl
-                                  cl.sendMessage(msg.to, "「 Berhasil Diganti 」\nWelcome Msg diganti jadi :\n\n{}".format(str(spl)))
+                                  cl.sendMessage(msg.to, "「 ตั้งข้อความคนเข้า 」\n\n{}".format(str(spl)))
 
                         elif '/ตั้งคนออก ' in msg.text:
                            if msg._from in admin:
@@ -7066,7 +7066,7 @@ def bot(op):
                                   cl.sendMessage(msg.to, "Gagal mengganti Leave Msg")
                               else:
                                   wait["leave"] = spl
-                                  cl.sendMessage(msg.to, "「 Berhasil Diganti 」\nLeave Msg diganti jadi :\n\n{}".format(str(spl)))
+                                  cl.sendMessage(msg.to, "「 ตั้งข้อความคนออก 」\n\n{}".format(str(spl)))
 
                         elif '/ตั้งคนแทค ' in msg.text:
                            if msg._from in admin:
@@ -7075,7 +7075,7 @@ def bot(op):
                                   cl.sendMessage(msg.to, "Gagal mengganti Respon Msg")
                               else:
                                   wait["Respontag"] = spl
-                                  cl.sendMessage(msg.to, "「 Berhasil Diganti 」\nRespon Msg diganti jadi :\n\n{}".format(str(spl)))
+                                  cl.sendMessage(msg.to, "「 ตั้งข้อความคนแทค 」\n\n{}".format(str(spl)))
 
                         elif '/ตั้งแสปม ' in msg.text:
                            if msg._from in admin:
@@ -7084,7 +7084,7 @@ def bot(op):
                                   cl.sendMessage(msg.to, "Gagal mengganti Spam")
                               else:
                                   Setmain["RAmessage1"] = spl
-                                  cl.sendMessage(msg.to, "「 Berhasil Diganti 」\nSpam Msg diganti jadi :\n\n{}".format(str(spl)))
+                                  cl.sendMessage(msg.to, "「 ตั้งข้อความแสปม 」\n\n{}".format(str(spl)))
 
                         elif '/ตั้งคนแอบ ' in msg.text:
                            if msg._from in admin:
@@ -7093,31 +7093,31 @@ def bot(op):
                                   cl.sendMessage(msg.to, "Gagal mengganti Sider Msg")
                               else:
                                   wait["mention"] = spl
-                                  cl.sendMessage(msg.to, "「 Berhasil Diganti 」\nSider Msg diganti jadi :\n\n{}".format(str(spl)))
+                                  cl.sendMessage(msg.to, "「 ตั้งข้อความคนแอบ 」\n\n{}".format(str(spl)))
 
                         elif text.lower() == "/ข้อความคนแอด":
                             if msg._from in admin:
-                               cl.sendMessage(msg.to, "「 Status Message 」\nPesan Msg mu :\n\n" + str(wait["message"]))
+                               cl.sendMessage(msg.to, "「 ข้อความคนแอด 」\n\n" + str(wait["message"]))
 
                         elif text.lower() == "/ข้อความคนเข้า":
                             if msg._from in admin:
-                               cl.sendMessage(msg.to, "「 Status Welcome 」\nWelcome Msg mu :\n\n" + str(wait["welcome"]))
+                               cl.sendMessage(msg.to, "「 ข้อความคนเข้า 」\n\n" + str(wait["welcome"]))
 
                         elif text.lower() == "/ข้อความคนออก":
                             if msg._from in admin:
-                               cl.sendMessage(msg.to, "「 Status Leave 」\nLeave Msg mu :\n\n" + str(wait["leave"]))
+                               cl.sendMessage(msg.to, "「 ข้อความคนออก 」\n\n" + str(wait["leave"]))
 
                         elif text.lower() == "/ข้อความคนแทค":
                             if msg._from in admin:
-                               cl.sendMessage(msg.to, "「 Status Respon 」\nRespon Msg mu :\n\n" + str(wait["Respontag"]))
+                               cl.sendMessage(msg.to, "「 ข้อความคนแทค 」\n\n" + str(wait["Respontag"]))
 
                         elif text.lower() == "/ข้อความแสปม":
                             if msg._from in admin:
-                               cl.sendMessage(msg.to, "「 Status Spam 」\nSpam Msg mu :\n\n" + str(Setmain["RAmessage1"]))
+                               cl.sendMessage(msg.to, "「 ข้อความแสปม 」\n\n" + str(Setmain["RAmessage1"]))
 
                         elif text.lower() == "/ข้อความคนแอบ":
                             if msg._from in admin:
-                               cl.sendMessage(msg.to, "「 Status Sider 」\nSider Msg mu :\n\n" + str(wait["mention"]))
+                               cl.sendMessage(msg.to, "「 ข้อความคนแอบ 」\n\n" + str(wait["mention"]))
 
 #===========JOIN TICKET============#
                         elif "/ti/g/" in msg.text.lower():
